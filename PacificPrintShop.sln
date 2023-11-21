@@ -3,17 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacificPrintShop.API", "PacificPrintShop.API\PacificPrintShop.API.csproj", "{BB47A22A-8FB6-48A5-8541-FC150CFFAECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PacificPrint.Shop.API", "PacificPrintShop.API\PacificPrint.Shop.API.csproj", "{BB47A22A-8FB6-48A5-8541-FC150CFFAECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacificPrintShop.Data", "PacificPrintShop.Data\PacificPrintShop.Data.csproj", "{ED190245-8C0D-4514-A42F-E0B2B74C62CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PacificPrint.Shop.Data", "PacificPrintShop.Data\PacificPrint.Shop.Data.csproj", "{ED190245-8C0D-4514-A42F-E0B2B74C62CC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{714C3F0C-14D8-4799-9281-2AF2503C92A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BB47A22A-8FB6-48A5-8541-FC150CFFAECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{ED190245-8C0D-4514-A42F-E0B2B74C62CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED190245-8C0D-4514-A42F-E0B2B74C62CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED190245-8C0D-4514-A42F-E0B2B74C62CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714C3F0C-14D8-4799-9281-2AF2503C92A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714C3F0C-14D8-4799-9281-2AF2503C92A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714C3F0C-14D8-4799-9281-2AF2503C92A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714C3F0C-14D8-4799-9281-2AF2503C92A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14638EB0-6EFA-47D7-AD08-BA2BE9FE5CE5}
 	EndGlobalSection
 EndGlobal

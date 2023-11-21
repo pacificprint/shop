@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using PacificPrintShop.Data.Context.PacificPrintShop;
 using InstantAPIs;
+using PacificPrint.Shop.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<PacificPrintShopContext>(o => o.UseSqlite(builder.Configuration.GetConnectionString("PacificPrintShop")));
+builder.Services.AddDbContext<PacificPrintContext>(o => o.UseNpgsql(builder.Configuration["ConnectionStrings:PacificPrint"]));
 builder.Services.AddInstantAPIs(options => options.EnableSwagger = EnableSwagger.Always);
 
 var app = builder.Build();
@@ -17,6 +17,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapInstantAPIs<PacificPrintShopContext>();
+app.MapInstantAPIs<PacificPrintContext>();
 
 app.Run();
