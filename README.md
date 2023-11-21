@@ -1,2 +1,2 @@
-# shop-api
-Shop API.
+# Pacific Print Shop
+Shop project.
