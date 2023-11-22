@@ -5,7 +5,7 @@ namespace PacificPrint.Shop.Data.Entities;
 
 public partial class Client
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     public string FirstName { get; set; } = null!;
 
@@ -17,13 +17,15 @@ public partial class Client
 
     public string PhoneNumber { get; set; } = null!;
 
+    public string? CompanyName { get; set; }
+
     public string Street { get; set; } = null!;
 
     public decimal HouseNumber { get; set; }
 
     public string Neighborhood { get; set; } = null!;
 
-    public decimal Postalcode { get; set; }
+    public decimal PostalCode { get; set; }
 
     public string City { get; set; } = null!;
 
@@ -34,4 +36,6 @@ public partial class Client
     public DateTime CreatedAt { get; set; }
 
     public DateTime UpdatedAt { get; set; }
+
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

@@ -20,4 +20,4 @@ services:
     image: ${DOCKER_REGISTRY-}pacificprintshopapi
     build:
       context: .
-      dockerfile: PacificPrintShop.API/Dockerfile
+      dockerfile: PacificPrint.Shop.API/Dockerfile

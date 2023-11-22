@@ -9,11 +9,11 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["PacificPrintShop.API/PacificPrint.Shop.API.csproj", "PacificPrintShop.API/"]
-COPY ["PacificPrintShop.Data/PacificPrint.Shop.Data.csproj", "PacificPrintShop.Data/"]
-RUN dotnet restore "./PacificPrintShop.API/./PacificPrint.Shop.API.csproj"
+COPY ["PacificPrint.Shop.API/PacificPrint.Shop.API.csproj", "PacificPrint.Shop.API/"]
+COPY ["PacificPrint.Shop.Data/PacificPrint.Shop.Data.csproj", "PacificPrint.Shop.Data/"]
+RUN dotnet restore "./PacificPrint.Shop.API/./PacificPrint.Shop.API.csproj"
 COPY . .
-WORKDIR "/src/PacificPrintShop.API"
+WORKDIR "/src/PacificPrint.Shop.API"
 RUN dotnet build "./PacificPrint.Shop.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish

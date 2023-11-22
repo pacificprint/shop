@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PacificPrintShop.Data\PacificPrint.Shop.Data.csproj" />
+    <ProjectReference Include="..\PacificPrint.Shop.Data\PacificPrint.Shop.Data.csproj" />
   </ItemGroup>
 
 </Project>
