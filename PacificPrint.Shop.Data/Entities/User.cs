@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace PacificPrint.Shop.Data.Entities;
+﻿namespace PacificPrint.Shop.Data.Entities;
 
 public partial class User
 {

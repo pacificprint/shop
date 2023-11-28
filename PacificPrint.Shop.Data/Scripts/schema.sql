@@ -1,5 +1,3 @@
-create database pacificprint;
-
 create schema shop;
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

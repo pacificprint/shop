@@ -24,6 +24,14 @@ public partial class PacificPrintContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    override protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseNpgsql("Host=localhost;Database=pacificprint;Username=eduardo;Password=Developing123;Persist Security Info=True");
+        }
+    }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
